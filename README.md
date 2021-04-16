@@ -15,10 +15,10 @@ Make sure to check off your items as you complete them. [ ] => [x]
 - [x] Fork this repository to your Github account and pull it down to Glitch.
 
 ### JavaScript
-- [ ] Create a working fetch() request inside the click handler.
-- [ ] Declare a variable that stores the following API request URL: https://api.giphy.com/v1/gifs/search?q=puppy&rating=pg&api_key=dc6zaTOxFJmzC
-- [ ] Get the response from the API request.
-- [ ] Log the response to the console.
+- [x] Create a working fetch() request inside the click handler.
+- [x] Declare a variable that stores the following API request URL: https://api.giphy.com/v1/gifs/search?q=puppy&rating=pg&api_key=dc6zaTOxFJmzC
+- [x] Get the response from the API request.
+- [x] Log the response to the console.
 
 ### Wrap
 - [ ] Push your changes!
