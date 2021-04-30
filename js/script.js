@@ -8,12 +8,21 @@ let API =
 
 $(".search-button").click(function() {
   let userSearch = $("input").val();
+    API = "https://api.giphy.com/v1/gifs/search?q=" + userSearch + "&rating=pg&api_key=dc6zaTOxFJmzC"
   fetch(API)
     .then(function(response) {
       return response.json();
     })
 
     .then(function(gifAPI) {
-      $(".introText").append(`<img src="${gifAPI.data[0].images.original.url}">`);
+    let randNum = Math.floor(Math.random() * gifAPI.data.length);
+    let smth = Math.floor(Math.random() * gifAPI.data.length);
+    $(".main").append(`<img src="${gifAPI.data[randNum].images.original.url}"> <img src="${gifAPI.data[smth].images.original.url}">`);
+    $(".introText").hide();
     });
+});
+
+$(".clear-button").click(function() {
+  $(".main").empty();
+  $(".introText").show();
 });
